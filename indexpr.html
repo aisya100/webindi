@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>youfit gym</title>
+        <link rel="stylesheet" href="css/stylepr.css">
+    </head>
+    <body>
+
+        <div class="user hide-details" id="userBox">
+            <img src="gambar/ft.jpeg" onclick="openinfo()">
+            <div class="info">
+                <h3>AISYAH</h3>
+                <p>WEBSITE THE ROYAL BALET</p>
+                <p><span>10 April 2006</span></p>
+                <a href="#">Connect with me</a>
+            </div>
+            <div class="close-icon" onclick="closeinfo()"></div>
+        </div>
+
+        <script>
+
+        let userBox = document.getElementById("userBox");
+
+        function openinfo() {
+            userBox.classList.remove("hide-details");
+        }
+        function closeinfo(){
+            userBox.classList.add("hide-details");
+        }
+        </script>
+
+
+    </body>
+</html>

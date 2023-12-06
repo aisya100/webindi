@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>royal balet</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- header section starts  -->
+<header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">THE ROYAL BALET<span></span></a>
+    <div class="toggel"></div>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#pose">pose</a>
+        <a href="#trainers">trainers</a>
+        <a href="#contact">contact</a>
+        <a href="indexpr.html">profile</a>
+    </nav>
+</header>
+
+<!-- home section starts  -->
+
+<section id="home" class="home view">
+    <div class="highlights">
+        <h1><b>ROYAL<span> BALET</span></b></h1>
+        <p class="tagline">
+            Results, not promises.
+        </p>
+        <a href="#about"><buton class="join">join now</buton> </a>
+    </div>
+    <div class="banner"></div>
+</section>
+
+<!--about section --> 
+
+<section id="about" class="about view">
+    <div class="main">
+        <h2><span>A</span>bout<span> U</span>s</h2>
+        <h4>ROYAL BALET</h4>
+    </div>
+    <div class="content">
+        <div class="cols">
+            <p><b>Balet adalah sebuah seni tari istimewa yang berasal dari Italia dan berkembang di Prancis. Tarian ini ditampilkan dengan cara khusus di atas panggung sehingga berbeda dengan tarian pada umumnya. Balet memiliki langkah, gerakan, musik, kostum, tata rias, serta set panggung tertentu untuk bercerita atau menampilkan sebuah kisah.</b></p>
+            <a href="https://lister.co.id/blog/mengenal-lebih-jauh-tentang-tari-balet/">more</a>
+        </div>
+        <div class="cols">
+            <div class="box">
+                <img src="gambar/ballet-dance.gif" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----- pose section ----->
+
+<section id="pose" class="pose view">
+    <div class="main">
+        <h2><span>P</span>ose</h2>
+        <h4>ROYAL BALET</h4>
+    </div>
+
+    <div class="content">
+        <div class="frame">
+            <div class="box">
+                <img src="gambar/wo.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="frame">
+            <div class="box">
+                <img src="gambar/wo2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="frame">
+            <div class="box">
+                <img src="gambar/wo3.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="frame">
+            <div class="box">
+                <img src="gambar/wo4.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="frame">
+            <div class="box">
+                <img src="gambar/wo5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="frame">
+            <div class="box">
+                <img src="gambar/wo6.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+<!----- Trainers section ----->
+
+<section id="trainers" class="trainers view">
+    <div class="main">
+        <h2><span>B</span>est<span> T</span>rainers</h2>
+        <h4>ROYAL BALET</h4>
+    </div>
+
+    <div class="content">
+        <div class="frame">
+            <div class="box">
+                <video controls>
+                    <source src="video/Ballet Winter Camp _ Join us! (1).mp4">
+                </video>
+            </div>
+            <a href="https://www.youtube.com/@CasaDeBaletBucuresti/videos" >Explore</a>
+        </div>
+
+        <div class="frame">
+            <div class="box">
+                <video controls>
+                    <source src="video/Festivalul Micutelor Balerine 2016 www.casadebalet.ro.mp4">
+                </video>
+            </div>
+            <a href="https://www.youtube.com/@CasaDeBaletBucuresti/videos" >Explore</a>
+        </div>
+
+        <div class="frame">
+            <div class="box">
+                <video controls>
+                    <source src="video/This is Casa de Balet.mp4">
+                </video>
+            </div>
+            <a href="https://www.youtube.com/@CasaDeBaletBucuresti/videos" >Explore</a>
+        </div>
+        <div class="frame">
+            <div class="box">
+                <video controls>
+                    <source src="video/GALA Casei de Balet - 08 iunie 2015.mp4">
+                </video>
+            </div>
+            <a href="https://www.youtube.com/@CasaDeBaletBucuresti/videos" >Explore</a>
+        </div>
+</section
+
+<!-- contact -->
+
+<section id="contact" class="contact view">
+    <div class="main">
+        <h2><span>C</span>ontact</h2>
+        <h4>YOUFIT LOGIN</h4>
+    </div>
+    <div class="content">
+        <form>
+            <input type="text" placeholder="User">
+            <input type="email" placeholder="Email">
+            <textarea rows="5" placeholder="what's on your mind"></textarea>
+            <br>
+            <input type="submit" value="Send" class="btn">
+        </form>
+
+    </div>
+</section>
+
+ <!-- footer section design -->
+<section class="footer">
+
+    <div class="credit"> created by <span>Aisyah XII-MM</span> | All rights reserved</div>
+</section>
+
+
+<!---- javascript code here----->
+<script>
+    window.addEventListener('scroll', function (){
+        const header = document.querySelector('.header');
+        header.classList.toggel("sticky", window.scrollY > 50);
+    });
+
+    const toggelebar = document.querySelector('.toggel');
+    const menu = document.querySelector('ol');
+
+    function headToggel(){
+        togglebar.classList.toggel("active");
+        menu.classList.toggel("active");
+    }
+</script>    
+</body>
+</html>
